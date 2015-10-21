@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCamp Berlin 2015 Test Plugin 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/multisite-language-switcher\n"
-"POT-Creation-Date: 2015-10-21 11:19+0100\n"
-"PO-Revision-Date: 2015-10-21 11:19+0100\n"
+"POT-Creation-Date: 2015-10-21 17:54+0100\n"
+"PO-Revision-Date: 2015-10-21 17:54+0100\n"
 "Last-Translator: Dennis Ploetner <dennis.ploetner@drivek.com>\n"
 "Language-Team: Dennis Ploetner <re@lloc.de>\n"
 "Language: German (de_DE)\n"
@@ -19,3 +19,49 @@ msgstr ""
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
+
+#: ../wcberplugin.php:22 ../wcberplugin.php:58 ../wcberplugin.php:60
+msgid "Hello, dear user!"
+msgstr ""
+
+#: ../wcberplugin.php:25
+msgid "Howdy!"
+msgstr ""
+
+#: ../wcberplugin.php:29
+msgid "One star"
+msgid_plural "More stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../wcberplugin.php:33
+#, php-format
+msgid "%d star"
+msgid_plural "%d stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../wcberplugin.php:40
+msgctxt "With Context"
+msgid "Hello, dear user!"
+msgstr ""
+
+#: ../wcberplugin.php:43
+msgctxt "With Context"
+msgid "Howdy!"
+msgstr ""
+
+#: ../wcberplugin.php:47
+msgctxt "With Context"
+msgid "One star"
+msgid_plural "More stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../wcberplugin.php:51
+#, php-format
+msgctxt "With Context"
+msgid "%d star"
+msgid_plural "%d stars"
+msgstr[0] ""
+msgstr[1] ""

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordCamp Berlin 2015 Test Plugin 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/multisite-language-switcher\n"
-"POT-Creation-Date: 2015-10-21 17:54+0100\n"
-"PO-Revision-Date: 2015-10-21 17:54+0100\n"
+"POT-Creation-Date: 2015-10-23 17:42+0100\n"
+"PO-Revision-Date: 2015-10-23 17:43+0100\n"
 "Last-Translator: Dennis Ploetner <dennis.ploetner@drivek.com>\n"
 "Language-Team: Dennis Ploetner <re@lloc.de>\n"
 "Language: German (de_DE)\n"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../wcberplugin.php:22 ../wcberplugin.php:58 ../wcberplugin.php:60
+#: ../wcberplugin.php:22 ../wcberplugin.php:59 ../wcberplugin.php:60
 msgid "Hello, dear user!"
-msgstr ""
+msgstr "Hallo, lieber Benutzer!"
 
-#: ../wcberplugin.php:25
+#: ../wcberplugin.php:25 ../wcberplugin.php:63
 msgid "Howdy!"
 msgstr ""
 
@@ -44,7 +44,7 @@ msgstr[1] ""
 #: ../wcberplugin.php:40
 msgctxt "With Context"
 msgid "Hello, dear user!"
-msgstr ""
+msgstr "Hallo, lieber Besucher!"
 
 #: ../wcberplugin.php:43
 msgctxt "With Context"
@@ -65,3 +65,17 @@ msgid "%d star"
 msgid_plural "%d stars"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../wcberplugin.php:64
+msgid "Hallo!"
+msgstr ""
+
+#: ../wcberplugin.php:67
+msgctxt "William Shakespeare"
+msgid "It is not in the stars to hold our destiny but in ourselves."
+msgstr ""
+
+#: ../wcberplugin.php:68
+msgctxt "Marilyn Monroe"
+msgid "We are all of us stars, and we deserve to twinkle."
+msgstr ""

@@ -1,15 +1,15 @@
 <?php
 
 /*
- * Plugin Name: WordCamp Berlin 2015 Test Plugin
- * Description: Example plugin for my slots at the WordCamp Berlin 2015
+ * Plugin Name: WordCamp Berlin 2015 Plugin
+ * Description: Example plugin - WordCamp Berlin 2015
  * Author:      Dennis Ploetner
  * Author URI:  https://profiles.wordpress.org/realloc
  * Text Domain: wcbertheme
  */
 
 /**
- * Load plugin textdomain.
+ * Load plugin textdomain
  */
 add_action( 'plugins_loaded', function () {
 	load_plugin_textdomain( 'wcberplugin', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
@@ -55,9 +55,25 @@ add_action( 'wcberplugin/with_context', function () {
  * do_action( 'wcberplugin/esc_text' );
  */
 add_action( 'wcberplugin/esc_text', function () {
-	printf( '<h2 title="%s">%s</h2>', esc_attr__( 'Hello, dear user!', 'wpberplugin' ), esc_html__( 'Hello, dear user!', 'wpberplugin' ) );
+	printf( '<h2 title="%s">%s</h2>',
+		esc_attr__( 'Hello, dear user!', 'wpberplugin' ),
+		esc_html__( 'Hello, dear user!', 'wpberplugin' ) );
 
-	printf( '<h2 title="%s">%s</h2>', esc_attr__( 'Hello, dear user!', 'wpberplugin' ), esc_html__( 'Hello, dear user!', 'wpberplugin' ) );
+	echo '<p>';
+	esc_attr_e( 'Howdy!', 'wcberplugin' );
+	esc_html_e( 'Hallo!', 'wcberplugin' );
+	echo '</p>';
 
+	esc_attr_x( 'It is not in the stars to hold our destiny but in ourselves.', 'William Shakespeare', 'wcberplugin' );
+	esc_html_x( 'We are all of us stars, and we deserve to twinkle.', 'Marilyn Monroe', 'wcberplugin' );
 } );
+
+
+
+
+
+
+
+
+
 

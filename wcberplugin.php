@@ -1,72 +1,67 @@
 <?php
 
 /*
- * Plugin Name: WordCamp Berlin 2015 Plugin
+ * Plugin Name: wcber
  * Description: Example plugin - WordCamp Berlin 2015
  * Author:      Dennis Ploetner
  * Author URI:  https://profiles.wordpress.org/realloc
- * Text Domain: wcbertheme
+ * Text Domain: wcberplugin
  */
 
 /**
- * Load plugin textdomain
+ * Load plugin textdomain on plugins_loaded
  */
 add_action( 'plugins_loaded', function () {
-	load_plugin_textdomain( 'wcberplugin', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+	$path = plugin_basename( dirname( __FILE__ ) ) . '/languages';
+	load_plugin_textdomain( 'wctrn', false, $path );
 } );
 
 /**
- * do_action( 'wcberplugin/regular' );
+ * Load theme textdomain on after_theme_setup
  */
-add_action( 'wcberplugin/regular', function () {
-	echo '<h2>', __( 'Hello, dear user!', 'wcberplugin' ), '</h2>';
-
-	echo '<p>';
-	_e( 'Howdy!', 'wcberplugin' );
-	echo '</p>';
-
-	$stars = 1;
-	$str   = _n( 'One star', 'More stars', $stars, 'wcberplugin' );
-	echo $str; // One star
-
-	$stars = 3;
-	printf( _n( '%d star', '%d stars', $stars, 'wcberplugin' ), $stars ); // 3 stars
+add_action( 'after_setup_theme', function () {
+	$path = get_template_directory() . '/languages';
+	load_theme_textdomain( 'wctrn', $path );
 } );
 
 /**
- * do_action( 'wcberplugin/with_context' );
+ * Regular functions
  */
-add_action( 'wcberplugin/with_context', function () {
-	echo '<h2>', _x( 'Hello, dear user!', 'With Context', 'wcberplugin' ), '</h2>';
+printf( '<h2>%s</h2>', __( 'Hello, dear user!', 'wctrn' ) );
 
-	echo '<p>';
-	_ex( 'Howdy!', 'With Context', 'wcberplugin' );
-	echo '</p>';
+_e( 'Howdy pal!', 'wctrn' );
 
-	$stars = 1;
-	$str   = _nx( 'One star', 'More stars', $stars, 'With Context', 'wcberplugin' );
-	echo $str; // One star
-
-	$stars = 3;
-	printf( _nx( '%d star', '%d stars', $stars, 'With Context', 'wcberplugin' ), $stars ); // 3 stars
-} );
+$stars = 3;
+printf( _n( '%d star', '%d stars', $stars, 'wctrn' ), $stars );
+// Output => 3 stars
 
 /**
- * do_action( 'wcberplugin/esc_text' );
+ * With context
  */
-add_action( 'wcberplugin/esc_text', function () {
-	printf( '<h2 title="%s">%s</h2>',
-		esc_attr__( 'Hello, dear user!', 'wpberplugin' ),
-		esc_html__( 'Hello, dear user!', 'wpberplugin' ) );
+printf( '<h2>%s</h2>', _x( 'Hello, dear user!', 'With Context', 'wctrn' ) );
 
-	echo '<p>';
-	esc_attr_e( 'Howdy!', 'wcberplugin' );
-	esc_html_e( 'Hallo!', 'wcberplugin' );
-	echo '</p>';
+_ex( 'Howdy!', 'With Context', 'wctrn' );
 
-	esc_attr_x( 'It is not in the stars to hold our destiny but in ourselves.', 'William Shakespeare', 'wcberplugin' );
-	esc_html_x( 'We are all of us stars, and we deserve to twinkle.', 'Marilyn Monroe', 'wcberplugin' );
-} );
+$stars = 3;
+printf( _nx( '%d star', '%d stars', $stars, 'With Context', 'wctrn' ), $stars );
+// Output => 3 stars
+
+/**
+ * Escape output
+ */
+printf( '<h2 title="%s">%s</h2>',
+	esc_attr__( 'Hello, dear user!', 'wctrn' ),
+	esc_html__( 'Howdy pal!', 'wctrn' )
+);
+
+/* translators: Here is a message for you. */
+esc_html_e( 'How are you?', 'wctrn' );
+
+esc_html_x(
+	'It is not in the stars to hold our destiny but in ourselves.',
+	'William Shakespeare',
+	'wctrn'
+);
 
 
 

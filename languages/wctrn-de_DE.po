@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: wcber 0.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/multisite-language-"
 "switcher\n"
-"POT-Creation-Date: 2015-11-01 18:58+0100\n"
-"PO-Revision-Date: 2015-11-01 19:01+0100\n"
+"POT-Creation-Date: 2016-03-22 22:46+0100\n"
+"PO-Revision-Date: 2016-03-22 22:48+0100\n"
 "Last-Translator: Dennis Ploetner <dennis.ploetner@drivek.com>\n"
 "Language-Team: Dennis Ploetner <re@lloc.de>\n"
 "Language: de_DE\n"
@@ -22,32 +22,32 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../wcberplugin.php:36 ../wcberplugin.php:66
+#: ../wcberplugin.php:30 ../wcberplugin.php:53
 msgid "Hello, dear user!"
 msgstr "Hallo, lieber Benutzer!"
 
-#: ../wcberplugin.php:38 ../wcberplugin.php:67
+#: ../wcberplugin.php:32 ../wcberplugin.php:54
 msgid "Howdy pal!"
 msgstr ""
 
-#: ../wcberplugin.php:41
+#: ../wcberplugin.php:35
 #, php-format
 msgid "%d star"
 msgid_plural "%d stars"
 msgstr[0] "%d Stern"
 msgstr[1] "%d Sterne"
 
-#: ../wcberplugin.php:49
+#: ../wcberplugin.php:41
 msgctxt "With Context"
 msgid "Hello, dear user!"
 msgstr "Hallo, lieber Besucher!"
 
-#: ../wcberplugin.php:51
+#: ../wcberplugin.php:43
 msgctxt "With Context"
 msgid "Howdy!"
 msgstr ""
 
-#: ../wcberplugin.php:55
+#: ../wcberplugin.php:46
 #, php-format
 msgctxt "With Context"
 msgid "%d star"
@@ -56,11 +56,11 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: Here is a message for you.
-#: ../wcberplugin.php:71
+#: ../wcberplugin.php:58
 msgid "How are you?"
 msgstr ""
 
-#: ../wcberplugin.php:74
+#: ../wcberplugin.php:61
 msgctxt "William Shakespeare"
 msgid "It is not in the stars to hold our destiny but in ourselves."
 msgstr ""
